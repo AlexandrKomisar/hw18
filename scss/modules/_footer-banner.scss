@@ -1,0 +1,37 @@
+.footer-banner {
+    display: none;
+
+    @include media ($medium) {
+        @include displayFlex;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        background-image: url(../assets/images/footer-bg.png);
+        @include bgPosition;
+        padding: 20px;
+
+        & .container {
+            @include displayFlex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+        }
+        &__heading {
+            color: $lightColor;
+            font-weight: 300;
+            font-family: 'Lato Light';
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 25px;
+        }
+
+        .bold-text {
+            font-family: 'Lato Regular';
+            font-weight: 700;
+        }
+
+        .hire-me__btn {
+            @include btnStyle;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@mixin textStyle {
+    font-family: 'Lato Regular';
+    font-weight: 400;
+    font-size: 14px;
+    color: $lightColor;
+    text-align: center;
+}
+
+@mixin introHeader {
+    font-family: 'Lato Black';
+    text-transform: uppercase;
+    color: $lightColor;
+    text-align: center;
+}
+
+@mixin headerStyle ($color: $mainColor) {
+    color: $color;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Lato Light';
+    text-align: center;
+    text-transform: capitalize;
+
+    @include media ($medium) {
+        font-size: 40px;
+    }
+}
+
+@mixin btnStyle {
+    display: block;
+    text-transform: uppercase;
+    color: $mainColor;
+    background-color: $lightColor;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+@mixin displayFlex ($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin bgPosition {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin extendedLink {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: '';
+}
+
+@mixin media ($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}

@@ -1,0 +1,115 @@
+.intro{ 
+    position: relative;
+    background-image: url(../../assets/images/portfolio-bg.jpg);
+
+    & header {
+        clear: both;
+        margin-top: 50px;
+        @include displayFlex (column);
+        justify-content: center;
+    }
+
+    &__header {
+        @include introHeader;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    &__subheader {
+        @include textStyle;
+        margin-top: 20px;
+    }
+    @include media ($medium) {
+        padding-top: 65px;
+    }
+    .hire-me__btn {
+        @include btnStyle;
+        margin: 20px auto 0;
+    }
+
+    .menu-btn {
+        border: none;
+        background-color: rgba(#000000, 0);
+        float: right;
+        cursor: pointer;
+    }
+}
+.intro .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cookies {
+    background-color: $overlayColor;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    @include textStyle;
+    color: $lightColor;
+    padding: 10px;
+
+    &__accept-btn {
+        @include btnStyle;
+        width: 100px;
+        text-transform: capitalize;
+        color: #194277;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+
+    @include media ($medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 20px;
+
+        &__accept-btn {
+            width: auto;
+        }
+    }
+}
+// user-pic 
+.user-pic__wrapper {
+    @include displayFlex ();
+    justify-content: center;
+}
+.out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgba(#ffffff, 0.3);
+}
+.in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(#ffffff, 0.5);
+}
+.in-in {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url(https://media.glamour.com/photos/582216cb6992121641ec2b21/6:7/w_582,h_679,c_limit/ryan-gosling-dad.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+// user-pic END
+.arrow-wrapper {
+    margin: 20px auto;
+    display: inline-block;
+
+    @include media ($medium) {
+        margin: 50px auto;
+    }
+}

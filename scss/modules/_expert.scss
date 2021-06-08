@@ -1,0 +1,48 @@
+.expert {
+  text-align: center;
+  padding: 90px 15px;
+  background: #f1f8ff;
+
+  &__content-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__content-parent-box {
+    width: 100%;
+    padding: 15px;
+
+    @include media (920px) {
+      width: 30%;
+    }
+  }
+
+  &__content-parent-box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    border: solid #bac3cc 2px;
+    border-radius: 50%;
+    margin: 50px auto;
+  }
+
+  &__title {
+    @include textStyle;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3677fd;
+  }
+}
+
+.icon {
+  fill: #3677fd;
+  width: 40px;
+  height: auto;
+}
+
+.icon:hover {
+  fill: black;
+}

@@ -1,0 +1,538 @@
+.bg-phone {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") 0px 0px;
+}
+
+.bg-phone:hover {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") 0px -140px;
+}
+
+.bg-desing {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -140px 0px;
+}
+
+.bg-desing:hover {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -140px -140px;
+}
+
+.bg-development {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -280px 0px;
+}
+
+.bg-development:hover {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -280px -140px;
+}
+
+.bg-product {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -420px 0px;
+}
+
+.bg-product:hover {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -420px -140px;
+}
+
+.bg-ux {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -560px 0px;
+}
+
+.bg-ux:hover {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -560px -140px;
+}
+
+.bg-animations {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -700px 0px;
+}
+
+.bg-animations:hover {
+  width: 140px;
+  height: 140px;
+  background: url("../assets/images/css_sprites.png") -700px -140px;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url(../assets/fonts/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url(../assets/fonts/Lato/Lato-Bold);
+}
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url(../assets/fonts/Lato/Lato-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 15px;
+}
+
+@media screen and (min-width: 740px) {
+  .container {
+    width: 60%;
+    margin: 50px auto 0;
+  }
+}
+
+.about__content {
+  padding: 0 15px 40px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Lato Light";
+  font-size: 50px;
+  font-weight: 300;
+  color: #3695ff;
+}
+
+.text {
+  margin-top: 20px;
+  font-family: "Lato Regular";
+  font-size: 16px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.intro {
+  position: relative;
+  background-image: url(../../assets/images/portfolio-bg.jpg);
+}
+
+.intro header {
+  clear: both;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro__header {
+  font-family: 'Lato Black';
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.intro__subheader {
+  font-family: 'Lato Regular';
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 740px) {
+  .intro {
+    padding-top: 65px;
+  }
+}
+
+.intro .hire-me__btn {
+  display: block;
+  text-transform: uppercase;
+  color: #3695ff;
+  background-color: #ffffff;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 10px;
+  margin: 20px auto 0;
+}
+
+.intro .menu-btn {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  float: right;
+  cursor: pointer;
+}
+
+.intro .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cookies {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Lato Regular';
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.cookies__accept-btn {
+  display: block;
+  text-transform: uppercase;
+  color: #3695ff;
+  background-color: #ffffff;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 10px;
+  width: 100px;
+  text-transform: capitalize;
+  color: #194277;
+  font-size: 10px;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 740px) {
+  .cookies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 20px;
+  }
+  .cookies__accept-btn {
+    width: auto;
+  }
+}
+
+.user-pic__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.in-in {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url(https://media.glamour.com/photos/582216cb6992121641ec2b21/6:7/w_582,h_679,c_limit/ryan-gosling-dad.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.arrow-wrapper {
+  margin: 20px auto;
+  display: inline-block;
+}
+
+@media screen and (min-width: 740px) {
+  .arrow-wrapper {
+    margin: 50px auto;
+  }
+}
+
+.works__heading {
+  color: #3695ff;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Lato Light';
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 740px) {
+  .works__heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .works__heading {
+    margin-bottom: 50px;
+  }
+}
+
+.works__items-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.works__item {
+  position: relative;
+  min-width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 740px) {
+  .works__item {
+    min-width: 30%;
+    height: 150px;
+  }
+}
+
+.works__item:nth-child(1) {
+  background-image: url(../assets/images/works1.jpg);
+}
+
+.works__item:nth-child(2) {
+  background-image: url(../assets/images/works2.jpg);
+}
+
+.works__item:nth-child(3) {
+  background-image: url(../assets/images/works3.jpg);
+}
+
+.works__item:nth-child(4) {
+  background-image: url(../assets/images/works4.jpg);
+}
+
+.works__item:nth-child(5) {
+  background-image: url(../assets/images/works5.jpg);
+}
+
+.works__item:nth-child(6) {
+  background-image: url(../assets/images/works6.jpg);
+}
+
+.works__item-link::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: '';
+}
+
+.clients {
+  background-color: #f1f8ff;
+}
+
+.clients .container {
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 740px) {
+  .clients .container {
+    padding: 50px 0;
+  }
+}
+
+.clients__heading {
+  color: #3695ff;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Lato Light';
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 740px) {
+  .clients__heading {
+    font-size: 40px;
+  }
+}
+
+.clients__item-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.clients__item {
+  width: 100%;
+  height: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+
+@media screen and (min-width: 740px) {
+  .clients__item {
+    width: 20%;
+  }
+}
+
+.clients__item:nth-child(1) {
+  background-image: url(../assets/images/microsoft.png);
+}
+
+.clients__item:nth-child(2) {
+  background-image: url(../assets/images/samsung.png);
+}
+
+.clients__item:nth-child(3) {
+  background-image: url(../assets/images/ibm.png);
+}
+
+.clients__item:nth-child(4) {
+  background-image: url(../assets/images/google.png);
+}
+
+.footer-banner {
+  display: none;
+}
+
+@media screen and (min-width: 740px) {
+  .footer-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-image: url(../assets/images/footer-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+  }
+  .footer-banner .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+  .footer-banner__heading {
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Lato Light';
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+  }
+  .footer-banner .bold-text {
+    font-family: 'Lato Regular';
+    font-weight: 700;
+  }
+  .footer-banner .hire-me__btn {
+    display: block;
+    text-transform: uppercase;
+    color: #3695ff;
+    background-color: #ffffff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+}
+
+.expert {
+  text-align: center;
+  padding: 90px 15px;
+  background: #f1f8ff;
+}
+
+.expert__content-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.expert__content-parent-box {
+  width: 100%;
+  padding: 15px;
+}
+
+@media screen and (min-width: 920px) {
+  .expert__content-parent-box {
+    width: 30%;
+  }
+}
+
+.expert__content-parent-box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  border: solid #bac3cc 2px;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+
+.expert__title {
+  font-family: 'Lato Regular';
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3677fd;
+}
+
+.icon {
+  fill: #3677fd;
+  width: 40px;
+  height: auto;
+}
+
+.icon:hover {
+  fill: black;
+}
